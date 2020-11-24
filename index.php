@@ -18,6 +18,10 @@ error_reporting(-1);
 
 $b = new Square();
 try {
+
+	$version = file_get_context("version.txt");
+    	MyLog::log("Версия программы ".$version);
+
     $values = array();
     for ($i = 1; $i < 4; $i++) {
         echo "Введите " . $i . "-й аргумент:";
