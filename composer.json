@@ -1,0 +1,25 @@
+{
+    "name": "frista28/trpo",
+    "type": "project",
+    "authors": [
+        {
+            "name": "zhigulin",
+            "email": "dr.tigh-oleg@yandex.ru"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rok9ru/trpo-core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Frista28/zhigulin.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rok9ru/trpo-core":"^2.0",
+        "frista28/zhigulin":"^1.0"
+    }
+}

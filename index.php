@@ -5,13 +5,7 @@ use zhigulin\MyLog;
 use zhigulin\Square;
 use zhigulin\ZhigulinException;
 
-include "core/EquationInterface.php";
-include "core/LogInterface.php";
-include "core/LogAbstract.php";
-include "zhigulin/Linear.php";
-include "zhigulin/Square.php";
-include "zhigulin/MyLog.php";
-include "zhigulin/ZhigulinException.php";
+require_once(__DIR__."/vendor/autoload.php");
 
 ini_set("display_errors", 1);
 error_reporting(-1);
@@ -19,7 +13,7 @@ error_reporting(-1);
 $b = new Square();
 try {
 
-	$version = file_get_context("version.txt");
+	$version = file_get_contents("version");
     	MyLog::log("Версия программы ".$version);
 
     $values = array();
